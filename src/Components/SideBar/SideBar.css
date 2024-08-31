@@ -11,12 +11,15 @@
 .sideBar img{
      width:24px;
 }
-
+.sideBar img:hover{
+    cursor: pointer;
+}
 .sideBar .mainBar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .mainBar div{
@@ -85,4 +88,56 @@
 }
 .mediaTube .mediaImg img{
     width: 8px;
+}
+.mediaTube2{
+    margin-top: -18px;
+}
+.tubeMedia{
+    margin-top: -18px;
+}
+
+.tubeMedia .media1{
+    background: red;
+    padding: 3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.tubeMedia .media1 .media2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    border: 2px solid #fff;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0px;
+    border-radius: 50%;
+}
+.media2 img{
+    width: 6px;
+}
+
+
+/* BOTTOM FOOTER */
+.bottomFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.bottomFooter .footer1 span{
+    margin: 3px;
+    font-size: 15px;
+    color: #5a5a5a;
+}
+.bottomFooter .footer2{
+    display: flex;
+    justify-content: center;
+}
+.bottomFooter .footer2 p{
+    font-size: 13px;
+    color: #5a5a5a;
+    word-spacing: 5px;
 }

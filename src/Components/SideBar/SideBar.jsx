@@ -129,30 +129,31 @@ const SideBar = () => {
                         </div>
                         <div>YouTube Premium</div>
                     </div>
-                    <div>
-                        <div>
-                            <div><img src={assets.playSolid} alt="" /></div>
+                    <div className="tubeMedia">
+                        <div className="media1">
+                            <div className="media2"><img src={assets.playSolid} alt="" /></div>
                         </div>
-                        <span>YouTube Studio</span>
+                        <div className="pTag">YouTube Studio</div>
                     </div>
-                    <div>
-                        <div>
-                            <div><img src={assets.playSolid} alt="" /></div>
+                    <div className="tubeMedia">
+                        <div className="media1">
+                            <div className="media2"><img src={assets.playSolid} alt="" /></div>
                         </div>
-                        <span>YouTube Music</span>
+                        <div>YouTube Music</div>
                     </div>
-                    <div>                       
-                        <div>
+                    <div className="mediaTube mediaTube2">                       
+                        <div className="mediaImg">
                             <img src={assets.playSolid} alt="" />
                         </div>
-                        <span>YouTube Kids</span>
+                        <div>YouTube Kids</div>
                     </div>
                 </div>
             </div>
             <hr />
 
             <div>
-                <div>
+                <div className="you"></div>
+                <div className="mainBar">
                     <div>
                         <img src={assets.settings} alt="" />
                         <span>Settings</span>
@@ -169,16 +170,18 @@ const SideBar = () => {
             </div>
             <hr />
 
-            <div>
-                
-                <div>
+            <div className="bottomFooter">
+                <div className="footer1">
                     <span>About</span> <span>Press</span><span>Copyright</span>
                     <span>Contact us</span><span>Creator</span><span>Advertise</span>
                     <span>Developers</span>
                 </div>
-                <div>
+                <div className="footer1">
                     <span>Terms</span> <span>Privacy</span><span>Policy & Safety</span>
                     <span>How YouTube works</span><span>Test new features</span>
+                </div>
+                <div className="footer2">
+                    <p>© 2024 Video LLC</p>
                 </div>
             </div>
 

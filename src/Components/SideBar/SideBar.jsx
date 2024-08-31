@@ -4,25 +4,27 @@ import assets from "../../assets/assets";
 
 const SideBar = () => {
     return(
-        <div>
-            <div>
-                <div>
+        <div className="sideBar">
+            <div className="mainBar">
+                <div className="sideBarRoute">
                     <img src={assets.houseSolid} alt="" />
                     <span>Home</span>
                 </div>
-                <div>
+                <div className="sideBarRoute">
                     <img src={assets.playstationSolid} alt="" />
                     <span>Shorts</span>
                 </div>
-                <div>
+                <div className="sideBarRoute">
                     <img src={assets.hackerrankSolid} alt="" />
                     <span>Subscriptions</span>
                 </div>
             </div>
 
-            <div>
-                <h3>You <img src={assets.greater} alt="" /></h3>
-                <div>
+            <div >
+                <div className="you">
+                    <h3>You</h3> <img src={assets.greater} alt="" />
+                </div>
+                <div className="mainBar">
                     <div>
                         <img src={assets.channel} alt="" />
                         <span>Your Channel</span>
@@ -35,11 +37,13 @@ const SideBar = () => {
                         <img src={assets.playList} alt="" />
                         <span>PlayList</span>
                     </div>
-                    <div>
-                        <div>
+                    <div className="yourVideos">
+                        <div className="imgDiv">
                             <img src={assets.playSolid} alt="" />
                         </div>
-                        <span>Your Videos</span>
+                        <div>
+                            <span>Your Videos</span>
+                        </div>
                     </div>
                     <div>
                         <img src={assets.watchLater} alt="" />
@@ -54,9 +58,9 @@ const SideBar = () => {
             <hr />
 
             
-            <div>
-                <h3>Subscriptions</h3>
-                <div>
+            <div className="subClass">
+                <h3 className="you">Subscriptions</h3>
+                <div className="mainBar">
                     <div>
                         <img src={assets.image2} alt="" />
                         <span>TVC News</span>
@@ -81,17 +85,17 @@ const SideBar = () => {
                         <img src={assets.images3} alt="" />
                         <span>RoadSideCoder</span>
                     </div>
-                    <div>
+                    <div className="showMore">
                         <img src={assets.more} alt="" />
-                        <span>More</span>
+                        <span>Show more</span>
                     </div>
                 </div>
             </div>
             <hr />
 
             <div>
-                <h3>Explore</h3>
-                <div>
+                <h3 className="you">Explore</h3>
+                <div className="mainBar">
                     <div>
                         <img src={assets.trends} alt="" />
                         <span>Trending</span>
@@ -117,13 +121,13 @@ const SideBar = () => {
             <hr />
 
             <div>
-                <h3>More from MediaTube</h3>
-                <div>
-                    <div>
-                        <div>
+                <h3 className="you">More from MediaTube</h3>
+                <div className="mainBar">
+                    <div className="mediaTube">
+                        <div className="mediaImg">
                             <img src={assets.playSolid} alt="" />
                         </div>
-                        <span>YouTube Premium</span>
+                        <div>YouTube Premium</div>
                     </div>
                     <div>
                         <div>

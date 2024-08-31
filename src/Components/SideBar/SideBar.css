@@ -1,0 +1,88 @@
+.sideBar{
+    margin-top: 80px;
+    width: 280px;
+    height: 100vh; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+}
+
+.sideBar img{
+     width:24px;
+}
+
+.sideBar .mainBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.mainBar div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    /* font-weight: 900; */
+}
+
+/* YOU SECTION */
+.you{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+}
+.you h3{
+    font-size: 18px;
+}
+.you img{
+    width: 13px;
+}
+
+.mainBar .yourVideos{
+    display: flex;
+    /* background: red; */
+    align-items: center;
+    margin: 0 0;
+}
+.mainBar .yourVideos .imgDiv{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: solid 2px #333;
+}
+.yourVideos .imgDiv img{
+    width: 9px;
+}
+
+/* SUBSCRIPTIONS */
+.subClass .mainBar div img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.subClass .mainBar .showMore img{
+    width: 17px;
+}
+.subClass .mainBar .showMore{
+    display: flex;
+    align-items: center;
+    margin-left: 9px;
+}
+
+
+/* More from mediaTube */
+.mainBar .mediaTube .mediaImg{
+    display: flex;
+    justify-content: center;
+    background: red;
+    padding: 5px 10px;
+    width: 27px;
+    border-radius: 5px;
+}
+.mediaTube .mediaImg img{
+    width: 8px;
+}

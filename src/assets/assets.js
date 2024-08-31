@@ -56,10 +56,16 @@ import feedBack from './feedBack.svg'
 import more from './more.svg'
 import sport1 from './sport1.svg'
 import trends from './trends.svg'
+import help from './help.svg'
+import report from './report.svg'
+import settings from './settings.svg'
 
 
 const assets = {
     Ai,
+    help,
+    report,
+    settings,
     sport1,
     trends,
     channel,

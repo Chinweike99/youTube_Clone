@@ -81,10 +81,102 @@ const SideBar = () => {
                         <img src={assets.images3} alt="" />
                         <span>RoadSideCoder</span>
                     </div>
+                    <div>
+                        <img src={assets.more} alt="" />
+                        <span>More</span>
+                    </div>
                 </div>
             </div>
             <hr />
 
+            <div>
+                <h3>Explore</h3>
+                <div>
+                    <div>
+                        <img src={assets.trends} alt="" />
+                        <span>Trending</span>
+                    </div>
+                    <div>
+                        <img src={assets.musicSolid} alt="" />
+                        <span>Music</span>
+                    </div>
+                    <div>
+                        <img src={assets.gamepadSolid} alt="" />
+                        <span>Gaming</span>
+                    </div>
+                    <div>                       
+                        <img src={assets.newsSolid} alt="" />
+                        <span>News</span>
+                    </div>
+                    <div>
+                        <img src={assets.sport1} alt="" />
+                        <span>Sport</span>
+                    </div>
+                </div>
+            </div>
+            <hr />
+
+            <div>
+                <h3>More from MediaTube</h3>
+                <div>
+                    <div>
+                        <div>
+                            <img src={assets.playSolid} alt="" />
+                        </div>
+                        <span>YouTube Premium</span>
+                    </div>
+                    <div>
+                        <div>
+                            <div><img src={assets.playSolid} alt="" /></div>
+                        </div>
+                        <span>YouTube Studio</span>
+                    </div>
+                    <div>
+                        <div>
+                            <div><img src={assets.playSolid} alt="" /></div>
+                        </div>
+                        <span>YouTube Music</span>
+                    </div>
+                    <div>                       
+                        <div>
+                            <img src={assets.playSolid} alt="" />
+                        </div>
+                        <span>YouTube Kids</span>
+                    </div>
+                </div>
+            </div>
+            <hr />
+
+            <div>
+                <div>
+                    <div>
+                        <img src={assets.settings} alt="" />
+                        <span>Settings</span>
+                    </div>
+                    <div>
+                        <img src={assets.report} alt="" />
+                        <span>Report history</span>
+                    </div>
+                    <div>
+                        <img src={assets.help} alt="" />
+                        <span>Help</span>
+                    </div>
+                </div>
+            </div>
+            <hr />
+
+            <div>
+                
+                <div>
+                    <span>About</span> <span>Press</span><span>Copyright</span>
+                    <span>Contact us</span><span>Creator</span><span>Advertise</span>
+                    <span>Developers</span>
+                </div>
+                <div>
+                    <span>Terms</span> <span>Privacy</span><span>Policy & Safety</span>
+                    <span>How YouTube works</span><span>Test new features</span>
+                </div>
+            </div>
 
         </div>
     )

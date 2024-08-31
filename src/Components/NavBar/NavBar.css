@@ -1,0 +1,141 @@
+.mainNavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    position: sticky;
+    background: rgb(150, 184, 177);
+    border-bottom: solid 1px rgb(217, 210, 210);
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+.mainNavBar img{
+    width: 35px;
+}
+
+/* LEFT NavBar */
+.mainNavBar .leftNav{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.leftNav .playIcon{
+    background: red;
+    padding: 10px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.leftNav .playIcon img{
+    width: 10px;
+}
+.leftNav p{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* Middle NavBar */
+.mainNavBar .middleNav{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.middleNav .navInput{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background: rgb(220, 216, 216);
+    padding: 4px 15px;
+    border-radius: 25px;
+    height: 45px;
+    margin-right: 10px;
+}
+.navInput input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 100%;
+    font-size: 19px;
+    padding-left: 5px;
+}
+.middleNav img{
+    width: 25px;
+}
+
+.middleNav .micDiv{
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    height: 43px;
+    border-radius: 50%;
+}
+.middleNav .micDiv:hover{
+    background: rgb(240, 236, 236);
+}
+
+.middleNav .mic{
+    width: 16px;
+}
+
+/* RIGHT NavBar */
+.mainNavBar .rightNav{
+    display: flex;
+    gap: 17px;
+}
+.rightNav img{
+    width: 30px;
+}
+.rightNav .notification{
+    display: flex;
+    position: relative;
+    /* background: rgb(79, 79, 68); */
+    width: 30px;
+}
+.notification img{
+    width: 25px;
+}
+.notification p{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    background: rgb(205, 9, 9);
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 12px;
+    width: 19px;
+}
+.rightNav .userIcon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+@media (max-width:600px){
+    /* .mainNavBar .rightNav {
+        display: none;
+    } */
+    .mainNavBar .rightNav .notification, .videoImg{
+        display: none;
+    }
+}
+@media (max-width:900px){
+    .leftNav p{
+        display: none;
+    }
+    .leftNav .playIcon{
+        display: none;
+    }
+}

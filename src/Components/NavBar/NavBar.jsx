@@ -7,27 +7,29 @@ const NavBar = () => {
         <div className="mainNavBar">
             <div className="leftNav">
                 <img src={assets.menuBar} alt="" />
-                <div>
+                <div className="playIcon">
                     <img src={assets.playSolid} alt="" />
                 </div>
                 <p>mediaTube</p>
             </div>
 
             <div className="middleNav">
-                <div>
-                <input type="text" />
-                <img src={assets.glassSolid} alt="" />
+                <div className="navInput">
+                    <input type="text" placeholder="Search video"/>
+                    <img src={assets.glassSolid} alt="" />
                 </div>
-                <img src={assets.microphoneSolid} alt="" />
+                <div className="micDiv">
+                    <img className="mic" src={assets.microphoneSolid} alt="" />
+                </div>
             </div>
 
             <div className="rightNav">
-                <img src={assets.videoSolid} alt="" />
-                <div>
+                <img className="videoImg" src={assets.videoSolid} alt="" />
+                <div className="notification">
                     <img src={assets.bellSolid} alt="" />
                     <p>9+</p>
                 </div>
-                <img src={assets.image2} alt="" />
+                <img className="userIcon" src={assets.image2} alt="" />
             </div>
         </div>
     )

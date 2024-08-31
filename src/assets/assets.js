@@ -46,11 +46,13 @@ import dataAnalysis from './dataAnalysis.jpg'
 import dataAnalysis2 from './dataAnalysis2.jpg'
 import health from './health.jpg'
 import health2 from './health2.jpg'
+import playSolid from './playSolid.svg'
 
 
 const assets = {
     Ai,
     Ai2,
+    playSolid,
     comedy,
     dataAnalysis,
     dataAnalysis2,

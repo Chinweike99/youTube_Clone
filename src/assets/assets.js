@@ -47,10 +47,28 @@ import dataAnalysis2 from './dataAnalysis2.jpg'
 import health from './health.jpg'
 import health2 from './health2.jpg'
 import playSolid from './playSolid.svg'
+import channel from './channel.svg'
+import greater from './greater.svg'
+import history from './history.svg'
+import playList from './playList.svg'
+import watchLater from './watchLater.svg'
+import feedBack from './feedBack.svg'
+import more from './more.svg'
+import sport1 from './sport1.svg'
+import trends from './trends.svg'
 
 
 const assets = {
     Ai,
+    sport1,
+    trends,
+    channel,
+    greater,
+    history,
+    playList,
+    watchLater,
+    more,
+    feedBack,
     Ai2,
     playSolid,
     comedy,

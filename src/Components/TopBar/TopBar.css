@@ -1,0 +1,13 @@
+.topBar{
+    background: red;
+    padding: 15px;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons img{
+    width: 15px;
+    margin: 0 10px;
+}

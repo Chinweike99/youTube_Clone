@@ -59,6 +59,7 @@ import trends from './trends.svg'
 import help from './help.svg'
 import report from './report.svg'
 import settings from './settings.svg'
+import lessThan from './lessThan.svg'
 
 
 const assets = {
@@ -66,6 +67,7 @@ const assets = {
     help,
     report,
     settings,
+    lessThan,
     sport1,
     trends,
     channel,

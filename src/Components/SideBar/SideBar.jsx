@@ -25,15 +25,15 @@ const SideBar = ({showName}) => {
                     <h3>You</h3> {showName && <img src={assets.greater} alt="" />}
                 </div>
                 <div className="mainBar">
-                    <div>
+                    <div className="sideBarRoute">
                         <img src={assets.channel} alt="" />
                         {showName && <span>Your Channel</span>}
                     </div>
-                    <div>
+                    <div className="sideBarRoute">
                         <img src={assets.history} alt="" />
                         {showName && <span>History</span>}
                     </div>
-                    <div>
+                    <div className="sideBarRoute">
                         <img src={assets.playList} alt="" />
                         {showName && <span>PlayList</span>}
                     </div>
@@ -46,11 +46,11 @@ const SideBar = ({showName}) => {
                         </div>
                         }
                     </div>
-                    <div>
+                    <div className="sideBarRoute">
                         <img src={assets.watchLater} alt="" />
                         {showName && <span>Watch Later</span>}
                     </div>
-                    <div>
+                    <div className="sideBarRoute">
                         <img src={assets.thumbsUp} alt="" />
                         {showName && <span>Liked Videos</span>}
                     </div>

@@ -4,7 +4,9 @@ import './TopBar.css'
 const TopBar = () => {
     return(
         <div>
-            TopBar
+            <div className="button">
+                <button>all</button>
+            </div>
         </div>
     )
 }

@@ -1,13 +1,45 @@
 .topBar{
     background: red;
-    padding: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    width: 85%;
+    position: fixed;
+    left: 14%;
 }
+.topBar .mainBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: yellow;
+    text-align: center;
+    margin-bottom: 0;
+    width: 100%;
+    position: relative;
+}
+.topBar .mainBar #lessThan{
+    position: absolute;
+    left: 0;
+}
+
 
 .buttons{
     display: flex;
+    align-items: center;
 }
 
-.buttons img{
+.topBar img{
     width: 15px;
     margin: 0 10px;
 }
+
+.topBar button{
+    margin: 0 2px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+}
+

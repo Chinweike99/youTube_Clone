@@ -2,15 +2,16 @@ import React from "react";
 import './NavBar.css'
 import assets from "../../assets/assets";
 
-const NavBar = () => {
+const NavBar = ({showName, setShowName}) => {
     return(
         <div className="mainNavBar">
             <div className="leftNav">
-                <img src={assets.menuBar} alt="" />
+                <img onClick={!showName} src={assets.menuBar} alt="" />
                 <div className="playIcon">
                     <img src={assets.playSolid} alt="" />
                 </div>
-                <p>mediaTube</p>
+                {showName?<p>mediaTube</p> : ""}
+                
             </div>
 
             <div className="middleNav">

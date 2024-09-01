@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div>
-      <NavBar showName={showName}/>
-      <Home />
+      <NavBar showName={showName} setShowName={setShowName}/>
+      <Home showName={showName} setShowName={setShowName}/>
     </div>
   )
 }

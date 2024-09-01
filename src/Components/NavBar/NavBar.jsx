@@ -3,14 +3,19 @@ import './NavBar.css'
 import assets from "../../assets/assets";
 
 const NavBar = ({showName, setShowName}) => {
+
+    const handleTogle = () => {
+        setShowName(!showName)
+    }
+
     return(
         <div className="mainNavBar">
             <div className="leftNav">
-                <img onClick={!showName} src={assets.menuBar} alt="" />
+                <img onClick={handleTogle} src={assets.menuBar} alt="" />
                 <div className="playIcon">
                     <img src={assets.playSolid} alt="" />
                 </div>
-                {showName?<p>mediaTube</p> : ""}
+                <p>mediaTube</p> 
                 
             </div>
 

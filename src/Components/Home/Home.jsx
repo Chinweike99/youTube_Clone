@@ -4,10 +4,10 @@ import SideBar from "../SideBar/SideBar";
 import TopBar from "../TopBar/TopBar"
 import Feed from "../Feed/Feed";
 
-const Home = () => {
+const Home = ({showName, setShowName}) => {
     return(
         <div className="home">
-            <SideBar />
+            <SideBar showName={showName}/>
             <div>
                 <TopBar />
                 <Feed />

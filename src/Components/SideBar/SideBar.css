@@ -8,13 +8,38 @@
     padding: 20px; 
 }
 
+.hideBar{
+    width: 30px;
+    overflow-y: none; 
+    overflow-x: none;
+    margin: 100px 20px;
+    height: 100vh;
+}
+
 .sideBar img{
      width:24px;
 }
+.hideBar img{
+    width:24px;
+}
+
 .sideBar img:hover{
     cursor: pointer;
 }
+
+.hideBar img:hover{
+    cursor: pointer;
+}
+
 .sideBar .mainBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.hideBar .mainBar{
     display: flex;
     flex-direction: column;
     justify-content: center;

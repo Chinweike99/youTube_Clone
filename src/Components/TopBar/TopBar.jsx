@@ -8,7 +8,7 @@ function TopBar() {
 
   // Array of button labels for dynamic rendering
   const buttons = [
-    'all', 'JavaScript', 'Gaming', 'Game shows', 'Databases',
+    'all', 'all', 'JavaScript', 'Gaming', 'Game shows', 'Databases',
     'Software Development', 'Music', 'Action thrillers', 'Algorithms',
     'Thrillers', 'Nollywood', 'Server', 'E-commerce', 'Podcasts',
     'Editing', 'Live', 'News', 'Sketch comedy', 'Recently uploaded',
@@ -42,8 +42,8 @@ function TopBar() {
               id="lessThan"
             />
           </div>
-          <div className="buttons">
-              <div>
+            <div className="buttons">
+                <div className='divBtns'>
                   {/* Dynamically render buttons based on the current startIndex */}
                   {buttons.slice(startIndex, startIndex + 15).map((button, index) => (
                   <button key={index}>{button}</button>
@@ -52,13 +52,13 @@ function TopBar() {
             </div>
           {/* "greater than" image to scroll right */}
           <div className='imgDiv'>
-          <img 
-            src={assets.greater} 
-            alt="Scroll Right" 
-            onClick={handleScrollRight} 
-            className={startIndex >= buttons.length - 10 ? 'hidden' : ''}
-            id='rightImg'
-          />
+            <img 
+              src={assets.greater} 
+              alt="Scroll Right" 
+              onClick={handleScrollRight} 
+              className={startIndex >= buttons.length - 10 ? 'hidden' : ''}
+              id='rightImg'
+            />
           </div>
       </div>
     </div>

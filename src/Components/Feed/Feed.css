@@ -1,0 +1,15 @@
+.feeds{
+    background: red;
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+.feeds .feedBox{
+    background: yellow;
+    padding: 20px;
+}
+.feedBox .feedBoxImg{
+    width: 200px;
+}

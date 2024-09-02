@@ -8,7 +8,7 @@ const Home = ({showName, setShowName}) => {
     return(
         <div className="home">
             <SideBar showName={showName}/>
-            <div className={showName? "middleBar" : "null"}>
+            <div id="middleHome" className={showName? "middleBar" : "null"}>
                 <TopBar />
                 <Feed />
             </div>

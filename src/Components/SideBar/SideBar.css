@@ -19,6 +19,24 @@
     .sideBarRoute span{
         display: hidden;
     }
+    .sideBar{
+        overflow-y: hidden; 
+        overflow-x: hidden; 
+    }
+    .mainBar div span{
+        display: none;
+    }
+    .you img{
+        display: none;
+    }
+    .subClass .you {
+        display: none;
+
+    }
+    hr{
+        margin-bottom: 30px;
+    }
+
 }
 
 .hideBar{

@@ -1,6 +1,7 @@
 import React from "react";
 import './NavBar.css'
 import assets from "../../assets/assets";
+import { Link } from "react-router-dom";
 
 const NavBar = ({showName, setShowName}) => {
 
@@ -12,10 +13,12 @@ const NavBar = ({showName, setShowName}) => {
         <div className="mainNavBar">
             <div className="leftNav">
                 <img onClick={handleTogle} src={assets.menuBar} alt="" />
-                <div className="playIcon">
-                    <img src={assets.playSolid} alt="" />
-                </div>
-                <p>mediaTube</p> 
+                <Link to={"/home"}>
+                    <div className="playIcon">
+                        <img src={assets.playSolid} alt="" />
+                    </div>
+                </Link>
+                    <Link to={"/"} style={{ textDecoration: 'none' }}><p>mediaTube</p></Link>
                 
             </div>
 

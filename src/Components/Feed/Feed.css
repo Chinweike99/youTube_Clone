@@ -43,15 +43,15 @@
 
 /* BOTTOM FEED */
 .bottomFeed{
-    margin: 30px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     position: relative;
-    background-color: yellow;
     padding: 20px;
 }
 .bottomFeed .imgBtn{
     display: flex;
     gap: 12px;
-    background-color: red;
+    background-color: rgb(78, 61, 61);
     position: absolute;
     z-index: 1;
     margin: auto 42%;
@@ -64,7 +64,7 @@
 .bottomFeed .imgBtn button{
     width: 100px;
     padding: 3px 10px;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     background: none;
     color: #fff;

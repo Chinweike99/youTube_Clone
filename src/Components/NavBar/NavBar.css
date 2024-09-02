@@ -34,6 +34,9 @@
 .leftNav .playIcon img{
     width: 10px;
 }
+.leftNav Link {
+    display: flex;
+}
 .leftNav p{
     font-size: 40px;
     font-family: sans-serif;

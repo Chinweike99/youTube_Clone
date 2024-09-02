@@ -10,7 +10,7 @@ const Home = ({showName, setShowName}) => {
             <SideBar showName={showName}/>
             <div id="middleHome" className={showName? "middleBar" : "null"}>
                 <TopBar />
-                <Feed />
+                <Feed showName={showName}/>
             </div>
         </div>
     )

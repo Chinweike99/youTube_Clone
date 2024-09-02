@@ -2,9 +2,9 @@ import React from "react";
 import './Feed.css'
 import assets from "../../assets/assets";
 
-const Feed = () => {
+const Feed = ({showName}) => {
     return (
-        <div >
+        <div className={!showName ? "mainFeed" : null}>
             <div className="feeds">
             <div className="feedBox">
                 <img className="feedBoxImg" src={assets.image2} alt="" />

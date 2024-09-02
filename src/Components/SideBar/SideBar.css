@@ -12,6 +12,12 @@
 @media(max-width:900px){
     .hideBar{
         display: block;
+        position: fixed;
+        top:85px;
+        z-index: 1;
+    }
+    .sideBarRoute span{
+        display: hidden;
     }
 }
 

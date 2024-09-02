@@ -1,15 +1,89 @@
 .feeds{
-    background: red;
-    padding: 20px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-gap: 2px;
+    grid-row-gap: 10px;
+    margin-top: 60px;
 
 }
 .feeds .feedBox{
-    background: yellow;
-    padding: 20px;
+    padding: 5px;
 }
 .feedBox .feedBoxImg{
-    width: 200px;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+.feedBox .feedImg {
+    display: flex;
+    gap: 8px;
+}
+.feedBox .feedImg img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+/* SHORTSS */
+.shorts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    margin-top: 60px;
+}
+.shorts .feedBox .feedBoxImg{
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+}
+
+/* BOTTOM FEED */
+.bottomFeed{
+    margin: 30px auto;
+    position: relative;
+    background-color: yellow;
+    padding: 20px;
+}
+.bottomFeed .imgBtn{
+    display: flex;
+    gap: 12px;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    margin: auto 42%;
+    padding: 4px 75px;
+    border-radius: 25px;
+}
+.bottomFeed .imgBtn img{
+    width: 15px;
+}
+.bottomFeed .imgBtn button{
+    width: 100px;
+    padding: 3px 10px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    color: #fff;
+}
+.bottomFeed hr{
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 33px;
+}
+
+@media (max-width: 600px){
+    .bottomFeed .imgBtn{
+        display: flex;
+        gap: 12px;
+        z-index: 1;
+        margin: auto 37%;
+        padding: 4px 20px;
+        border-radius: 25px;
+    }
 }

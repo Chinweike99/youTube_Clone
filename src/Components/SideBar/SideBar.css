@@ -5,6 +5,7 @@
     overflow-x: hidden; 
     background-color: #f4f4f4; 
     padding: 20px; 
+    z-index: 1;
 }
 
 @media(max-width:900px){

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import assets from '../../assets/assets'; // Adjust the path as needed
+import './TopBar.css'
 
 function TopBar() {
   // State to track the current index of the first visible button
-  const [startIndex, setStartIndex] = useState(0);
+  const [startIndex, setStartIndex] = useState(1);
 
   // Array of button labels for dynamic rendering
   const buttons = [
@@ -16,7 +17,7 @@ function TopBar() {
 
   // Handle clicking the "less than" image
   const handleScrollLeft = () => {
-    if (startIndex > 0) {
+    if (startIndex > 1) {
       setStartIndex(startIndex - 1);
     }
   };
@@ -30,30 +31,35 @@ function TopBar() {
 
   return (
     <div className="topBar">
-      <div className="mainBar">
-        {/* "less than" image to scroll left */}
-      <img 
-        src={assets.lessThan} 
-        alt="Scroll Left" 
-        onClick={handleScrollLeft} 
-        className={startIndex === 0 ? 'hidden' : ''}
-        id="lessThan"
-      />
-      <div className="buttons">
-        <div>
-            {/* Dynamically render buttons based on the current startIndex */}
-        {buttons.slice(startIndex, startIndex + 17).map((button, index) => (
-          <button key={index}>{button}</button>
-        ))}
-        </div>
-      </div>
-      {/* "greater than" image to scroll right */}
-      <img 
-        src={assets.greater} 
-        alt="Scroll Right" 
-        onClick={handleScrollRight} 
-        className={startIndex >= buttons.length - 10 ? 'hidden' : ''}
-      />
+        <div className="mainBar">
+          {/* "less than" image to scroll left */}
+          <div className='imgDiv'>
+            <img 
+              src={assets.lessThan} 
+              alt="Scroll Left" 
+              onClick={handleScrollLeft} 
+              className={startIndex === 0 ? 'hidden' : ''}
+              id="lessThan"
+            />
+          </div>
+          <div className="buttons">
+              <div>
+                  {/* Dynamically render buttons based on the current startIndex */}
+                  {buttons.slice(startIndex, startIndex + 15).map((button, index) => (
+                  <button key={index}>{button}</button>
+                  ))}
+                </div>
+            </div>
+          {/* "greater than" image to scroll right */}
+          <div className='imgDiv'>
+          <img 
+            src={assets.greater} 
+            alt="Scroll Right" 
+            onClick={handleScrollRight} 
+            className={startIndex >= buttons.length - 10 ? 'hidden' : ''}
+            id='rightImg'
+          />
+          </div>
       </div>
     </div>
   );

@@ -1,19 +1,16 @@
 .topBar{
-    background: red;
-    padding: 10px;
+    background: rgb(65, 63, 63);
+    padding: 3px 10px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    right: 0;
-    width: 85%;
+    width: 95%;
     position: fixed;
-    left: 14%;
 }
 .topBar .mainBar{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: yellow;
     text-align: center;
     margin-bottom: 0;
     width: 100%;
@@ -24,22 +21,39 @@
     left: 0;
 }
 
-
 .buttons{
     display: flex;
     align-items: center;
+    width: 95%;
 }
 
 .topBar img{
     width: 15px;
     margin: 0 10px;
+    position: fixed;
 }
 
 .topBar button{
-    margin: 0 2px;
-    padding: 5px 5px;
-    border: none;
+    padding: 5px 10px;
     border-radius: 3px;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #333;
+    margin-top: 10px;
 }
-
+.mainBar .buttons{
+    z-index: -0.6;
+    /* opacity: 1; */
+}
+.mainBar #rightImg{
+    right: -9px;
+    position: fixed;
+    /* width: 70px; */
+}
+#lessThan, #rightImg{
+    background: #fff;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+}

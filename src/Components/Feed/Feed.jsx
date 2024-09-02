@@ -1,99 +1,122 @@
 import React from "react";
 import './Feed.css'
 import assets from "../../assets/assets";
+import { Link } from "react-router-dom";
 
 const Feed = ({showName}) => {
     return (
         <div className={!showName ? "mainFeed" : null}>
             <div className="feeds">
-            <div className="feedBox">
-                <img className="feedBoxImg" src={assets.image2} alt="" />
-                <div className="feedImg">
-                    <img src={assets.amandla} alt="" />
-                    <div>
-                    <h3>FInd Love with us, on our game</h3>
-                    <h4>Weike</h4>
-                    <p>20k views &bull; 2 days ago</p>
-                 </div>
+                <div className="feedBox">
+                    <Link to={"/PlayVideo"}><img className="feedBoxImg" src={assets.image2} alt="" /></Link>
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <div className="feedBox">
-                <img className="feedBoxImg" src={assets.image2} alt="" />
-                <div className="feedImg">
-                    <img src={assets.amandla} alt="" />
-                    <div>
-                    <h3>FInd Love with us, on our game</h3>
-                    <h4>Weike</h4>
-                    <p>20k views &bull; 2 days ago</p>
-                 </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.amandla} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <div className="feedBox">
-                <img className="feedBoxImg" src={assets.image2} alt="" />
-                <div className="feedImg">
-                    <img src={assets.amandla} alt="" />
-                    <div>
-                    <h3>FInd Love with us, on our game</h3>
-                    <h4>Weike</h4>
-                    <p>20k views &bull; 2 days ago</p>
-                 </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <div className="feedBox">
-                <img className="feedBoxImg" src={assets.image2} alt="" />
-                <div className="feedImg">
-                    <img src={assets.amandla} alt="" />
-                    <div>
-                    <h3>FInd Love with us, on our game</h3>
-                    <h4>Weike</h4>
-                    <p>20k views &bull; 2 days ago</p>
-                 </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.images1} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <div className="feedBox">
-                <img className="feedBoxImg" src={assets.image2} alt="" />
-                <div className="feedImg">
-                    <img src={assets.amandla} alt="" />
-                    <div>
-                    <h3>FInd Love with us, on our game</h3>
-                    <h4>Weike</h4>
-                    <p>20k views &bull; 2 days ago</p>
-                 </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <div className="feedBox">
-                <img className="feedBoxImg" src={assets.image2} alt="" />
-                <div className="feedImg">
-                    <img src={assets.amandla} alt="" />
-                    <div>
-                    <h3>FInd Love with us, on our game</h3>
-                    <h4>Weike</h4>
-                    <p>20k views &bull; 2 days ago</p>
-                 </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <div className="feedBox">
-                <img className="feedBoxImg" src={assets.image2} alt="" />
-                <div className="feedImg">
-                    <img src={assets.amandla} alt="" />
-                    <div>
-                    <h3>FInd Love with us, on our game</h3>
-                    <h4>Weike</h4>
-                    <p>20k views &bull; 2 days ago</p>
-                 </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <div className="feedBox">
-                <img className="feedBoxImg" src={assets.image2} alt="" />
-                <div className="feedImg">
-                    <img src={assets.amandla} alt="" />
-                    <div>
-                    <h3>FInd Love with us, on our game</h3>
-                    <h4>Weike</h4>
-                    <p>20k views &bull; 2 days ago</p>
-                 </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
                 </div>
-            </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
 
             </div>
             
@@ -111,7 +134,7 @@ const Feed = ({showName}) => {
                     </div>
                 </div>
                 <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.image6} alt="" />
+                    <img className="feedBoxImg" src={assets.img1} alt="" />
                     <div className="feedImg">
                         <img src={assets.amandla} alt="" />
                         <div>
@@ -122,7 +145,7 @@ const Feed = ({showName}) => {
                     </div>
                 </div>
                 <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <img className="feedBoxImg" src={assets.img2} alt="" />
                     <div className="feedImg">
                         <img src={assets.amandla} alt="" />
                         <div>
@@ -133,7 +156,7 @@ const Feed = ({showName}) => {
                     </div>
                 </div>
                 <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <img className="feedBoxImg" src={assets.img3} alt="" />
                     <div className="feedImg">
                         <img src={assets.amandla} alt="" />
                         <div>
@@ -144,7 +167,7 @@ const Feed = ({showName}) => {
                     </div>
                 </div>
                 <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <img className="feedBoxImg" src={assets.images3} alt="" />
                     <div className="feedImg">
                         <img src={assets.amandla} alt="" />
                         <div>
@@ -155,7 +178,7 @@ const Feed = ({showName}) => {
                     </div>
                 </div>
                 <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <img className="feedBoxImg" src={assets.Ai2} alt="" />
                     <div className="feedImg">
                         <img src={assets.amandla} alt="" />
                         <div>
@@ -167,6 +190,7 @@ const Feed = ({showName}) => {
                 </div>
             </div>
 
+        {/* MIDDLE FEED */}
             <div className="bottomFeed">
                 <div className="imgBtn">
                     <button>show more</button>
@@ -174,6 +198,233 @@ const Feed = ({showName}) => {
                 </div>
                 <hr />
             </div>
+
+            {/* BOTTOM FEEDS */}
+            <div className="feeds">
+            <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.amandla} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.images1} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.amandla} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.images1} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="feedBox">
+                    <img className="feedBoxImg" src={assets.image2} alt="" />
+                    <div className="feedImg">
+                        <img src={assets.amandla} alt="" />
+                        <div>
+                        <h3>FInd Love with us, on our game</h3>
+                        <h4>Weike</h4>
+                        <p>20k views &bull; 2 days ago</p>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
         </div>
     )
 }

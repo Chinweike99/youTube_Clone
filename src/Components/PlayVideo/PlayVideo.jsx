@@ -44,6 +44,50 @@ const PlayVideo = () => {
                     </div>
                 </div>
             </div>
+
+
+            {/* ABOUT VIDEO */}
+            <div className="aboutpost">
+                <span>1,500 views &bull; 3 hours ago</span>
+                <p>The blue underline is the default style applied to tags to indicate a clickable link. Browsers typically add this style to make links visually distinct. By using text-decoration: none;, you override this default behavior.</p>
+            </div>
+
+
+
+            {/* COMMENTS */}
+            <div className="commentsDiv">
+                <div className="commentHeading">
+                    <h1>500 Comments</h1>
+                    <div className="hamburger">
+                        <div className="div1"></div>
+                        <div className="div2"></div>
+                        <div className="div3"></div>
+                    </div>
+                    <h3>Sort by</h3>
+                </div>
+
+                <div className="addComment">
+                    <img src={assets.image4} alt="" />
+                    <div>
+                        <h4>Add a comment</h4>
+                        <hr />
+                    </div>
+                </div>
+
+                <div>
+                    <img src={assets.img5} alt="commenter" />
+                    <div>
+                        <h5>@chidiw4343 <span>7 hours ago</span> </h5> 
+                        <p>keep putting in the hard work my brother</p>
+                    </div>
+                    <div>
+                        <img src={assets.thumbsUp} alt="" />
+                        <span>123</span>
+                        <img src={assets.thumbsDown} alt="" />
+                        <button>Reply</button>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

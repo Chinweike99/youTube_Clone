@@ -1,0 +1,10 @@
+.manVideo{
+    background: #d5d8d8;
+    padding-bottom: 2px;
+    padding: 6%;
+}
+
+.videos{
+    display: flex;
+    gap: 5%;
+}

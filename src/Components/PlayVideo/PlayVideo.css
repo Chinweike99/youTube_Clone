@@ -1,23 +1,26 @@
 
+.plavVideo{
+    margin-top: 20px;
+}
+
 .controlDiv{
     display: flex;
     /* flex-direction: row; */
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 /* .mainDiv{
     width: 55%;
 } */
 .mainDiv video{
     width: 100%;
-    height: 700px;
     border-radius: 20px;
     border-top-left-radius: 20px;
 }
 .controlDiv img{
-    width: 18px;
+    width: 15px;
 }
 
 /* USER Styling */
@@ -34,10 +37,10 @@
     color: #5a5a5a;
 }
 .user button{
-    padding: 5px 20px;
+    padding: 3px 10px;
     border: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     background: #333;
     border-radius: 25px;
     cursor: pointer;
@@ -60,12 +63,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     background: #95c1b7;
-    padding: 6px 20px;
+    padding: 3px 15px;
     border-radius: 25px;
     cursor: pointer;
     font-size: 17px;
+}
+.actions .reactions:hover{
+    background: #fff;
+    border: 1px solid #95c1b7;
 }
 .reactions .verticalLine{
     width: 1px;
@@ -75,45 +82,59 @@
 .actions .share{
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 17px;
+    gap: 5px;
+    padding: 3px 15px;
     background: #95c1b7;
     padding: 6px 20px;
     border-radius: 25px;
     cursor: pointer;
+}
+.actions .share:hover{
+    background: #fff;
+    border: 1px solid #95c1b7;
 }
 .actions .download{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     font-size: 17px;
     background: #95c1b7;
-    padding: 6px 20px;
+    padding: 3px 15px;
     border-radius: 25px;
     cursor: pointer;
+}
+.actions .download:hover{
+    background: #fff;
+    border: 1px solid #95c1b7;
 }
 .actions .clip{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     font-size: 17px;
     background: #95c1b7;
-    padding: 6px 20px;
+    padding: 3px 15px;
     border-radius: 25px;
     cursor: pointer;
+}
+.actions .clip:hover{
+    background: #fff;
+    border: 1px solid #95c1b7;
 }
 .actions .dots{
     display: flex;
     background: #95c1b7;
-    padding: 22px 15px;
+    padding: 12px 6px;
     gap: 3px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 29px;
     border-radius: 50%;
+    cursor: pointer;
 }
+
 .actions .dots div{
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     background: #fff;
     border-radius: 50%;
 }

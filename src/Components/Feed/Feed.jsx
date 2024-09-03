@@ -8,7 +8,7 @@ const Feed = ({showName}) => {
         <div className={!showName ? "mainFeed" : null}>
             <div className="feeds">
                 <div className="feedBox">
-                    <Link to={`video/20/4521`}>
+                    <Link to={`video/20/4512`}>
                         <img className="feedBoxImg" src={assets.image2} alt="" />
                         <div className="feedImg">
                             <img src={assets.amandla} alt="" />

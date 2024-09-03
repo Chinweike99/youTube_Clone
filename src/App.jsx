@@ -14,7 +14,7 @@ function App() {
       <NavBar showName={showName} setShowName={setShowName}/>
       <Routes>
         <Route path='/' element={<Home showName={showName} setShowName={setShowName}/>}/>
-        <Route path='/video' element={<PlayVideo />}/>
+        <Route path='/video/:videoId/:otherId' element={<PlayVideo />}/>
       </Routes>
       
     </div>

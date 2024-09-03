@@ -25,7 +25,7 @@ const NavBar = ({showName, setShowName}) => {
             <div className="middleNav">
                 <div className="navInput">
                     <input type="text" placeholder="Search video"/>
-                    <img src={assets.glassSolid} alt="" />
+                    <div className="NavImg"><img src={assets.glassSolid} alt="" /></div>
                 </div>
                 <div className="micDiv">
                     <img className="mic" src={assets.microphoneSolid} alt="" />

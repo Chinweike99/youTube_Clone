@@ -38,7 +38,7 @@ import heartSolid from './heartSolid.svg'
 import shareSolid from './shareSolid.svg'
 import thumbsDown from './thumbsDown.svg'
 import thumbsUp from './thumbsUp.svg'
-import video1 from './video1.mp4'
+import video1 from './video1.webm'
 import Ai from './Ai.jpg'
 import Ai2 from './Ai2.jpg'
 import comedy from './comedy.jpg'
@@ -60,10 +60,12 @@ import help from './help.svg'
 import report from './report.svg'
 import settings from './settings.svg'
 import lessThan from './lessThan.svg'
+import clip from './clip.svg'
 
 
 const assets = {
     Ai,
+    clip,
     help,
     report,
     settings,

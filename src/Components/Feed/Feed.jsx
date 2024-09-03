@@ -8,15 +8,17 @@ const Feed = ({showName}) => {
         <div className={!showName ? "mainFeed" : null}>
             <div className="feeds">
                 <div className="feedBox">
-                    <Link to={"/PlayVideo"}><img className="feedBoxImg" src={assets.image2} alt="" /></Link>
-                    <div className="feedImg">
-                        <img src={assets.amandla} alt="" />
-                        <div>
-                        <h3>FInd Love with us, on our game</h3>
-                        <h4>Weike</h4>
-                        <p>20k views &bull; 2 days ago</p>
-                    </div>
-                    </div>
+                    <Link to={`video/20/4521`}>
+                        <img className="feedBoxImg" src={assets.image2} alt="" />
+                        <div className="feedImg">
+                            <img src={assets.amandla} alt="" />
+                            <div>
+                            <h3>Find Love with us, on our game</h3>
+                            <h4>Weike</h4>
+                            <p>20k views &bull; 2 days ago</p>
+                        </div>
+                        </div>
+                        </Link>
                 </div>
                 <div className="feedBox">
                     <img className="feedBoxImg" src={assets.amandla} alt="" />
@@ -121,6 +123,15 @@ const Feed = ({showName}) => {
             </div>
             
         {/* SHORTS */}
+                <div className="shortsHeading">
+                    {/* <img src={assets.playstationSolid} alt="" /> */}
+                    <div className="mediaTube">
+                        <div className="mediaImg">
+                            <img src={assets.playSolid} alt="" />
+                        </div>
+                    </div>
+                    <p>Shorts</p>
+                </div>
             <div className="shorts">
                 <div className="feedBox">
                     <img className="feedBoxImg" src={assets.image6} alt="" />

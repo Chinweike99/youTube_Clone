@@ -5,6 +5,7 @@
     grid-column-gap: 2px;
     grid-row-gap: 10px;
     margin-top: 67px;
+    margin-left: 10px;
 
 }
 .feeds .feedBox{
@@ -33,13 +34,39 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column-gap: 5px;
     grid-row-gap: 10px;
-    margin-top: 60px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 .shorts .feedBox .feedBoxImg{
     width: 100%;
     height: 450px;
     border-radius: 15px;
 }
+.shortsHeading{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.shortsHeading img{
+    width: 30px;
+}
+
+.mediaTube .mediaImg{
+    display: flex;
+    justify-content: center;
+    background: red;
+    padding: 5px 10px;
+    width: 27px;
+    border-radius: 5px;
+}
+.mediaTube .mediaImg img{
+    width: 8px;
+}
+
+
 
 /* BOTTOM FEED */
 .bottomFeed{

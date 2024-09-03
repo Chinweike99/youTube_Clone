@@ -8,6 +8,7 @@
     position: fixed;
     margin-bottom: 10px;
     /* margin-left: 14%; */
+    z-index: 2;
 }
 .topBar .mainBar{
     display: flex;

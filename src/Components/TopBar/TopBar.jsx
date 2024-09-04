@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import assets from '../../assets/assets'; // Adjust the path as needed
 import './TopBar.css'
+import { Link } from 'react-router-dom';
 
 function TopBar() {
   // State to track the current index of the first visible button
@@ -8,11 +9,27 @@ function TopBar() {
 
   // Array of button labels for dynamic rendering
   const buttons = [
-    'all', 'all', 'JavaScript', 'Gaming', 'Game shows', 'Databases',
-    'Software Development', 'Music', 'Action thrillers', 'Algorithms',
-    'Thrillers', 'Nollywood', 'Server', 'E-commerce', 'Podcasts',
-    'Editing', 'Live', 'News', 'Sketch comedy', 'Recently uploaded',
-    'Watched', 'New to you'
+    {label: 'all', path: '/all'},
+    {label: 'JavaScript', path: '/JavaScript'},
+    {label: 'Gaming', path: '/Gaming'},
+    {label: 'Game shows', path: '/Game shows'},
+    {label: 'Databases', path: '/Databases'},
+    {label: 'Software Development', path: '/Software Development'},
+    {label: 'Action thrillers', path: '/Action thrillers'},
+    {label: 'Music', path: '/Music'},
+    {label: 'Algorithms', path: '/Algorithms'},
+    {label: 'Thrillers', path: '/Thrillers'},
+    {label: 'Nollywood', path: '/Nollywood'},
+    {label: 'Server', path: '/Server'},
+    {label: 'E-commerce', path: '/E-commerce'},
+    {label: 'Podcasts', path: '/Podcasts'},
+    {label: 'Editing', path: '/Editing'},
+    {label: 'Live', path: '/Live'},
+    {label: 'News', path: '/News'},
+    {label: 'Sketch comedy', path: '/Sketch comedy'},
+    {label: 'Recently uploaded', path: '/Recently uploaded'},
+    {label: 'Watched', path: '/Watched'},
+    {label: 'New to you', path: '/New to you'},
   ];
 
   // Handle clicking the "less than" image
@@ -24,7 +41,7 @@ function TopBar() {
 
   // Handle clicking the "greater than" image
   const handleScrollRight = () => {
-    if (startIndex < buttons.length - 1) {
+    if (startIndex < buttons.length - 14) {
       setStartIndex(startIndex + 1);
     }
   };
@@ -46,7 +63,10 @@ function TopBar() {
                 <div className='divBtns'>
                   {/* Dynamically render buttons based on the current startIndex */}
                   {buttons.slice(startIndex, startIndex + 15).map((button, index) => (
-                  <button key={index}>{button}</button>
+                    <Link key={index} to={button.path}>
+                        <button >{button.label}</button>
+                    </Link>
+                  
                   ))}
                 </div>
             </div>

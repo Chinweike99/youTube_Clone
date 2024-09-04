@@ -68,24 +68,157 @@ const PlayVideo = () => {
 
                 <div className="addComment">
                     <img src={assets.image4} alt="" />
-                    <div>
-                        <h4>Add a comment</h4>
+                    <div className="comment1">
+                        <h4>Add a comment ...</h4>
                         <hr />
                     </div>
                 </div>
 
-                <div>
-                    <img src={assets.img5} alt="commenter" />
-                    <div>
-                        <h5>@chidiw4343 <span>7 hours ago</span> </h5> 
-                        <p>keep putting in the hard work my brother</p>
-                    </div>
-                    <div>
-                        <img src={assets.thumbsUp} alt="" />
-                        <span>123</span>
-                        <img src={assets.thumbsDown} alt="" />
-                        <button>Reply</button>
-                    </div>
+                <div >
+                    <div className="postCommenters">
+                        <img src={assets.img5} alt="commenter" />
+                        <div className="bottomreacts">
+                            <h5>@chidiw4343 <span>7 hours ago</span> </h5> 
+                            <p>Regarding your question about listing JavaScript as a language for the frontend: it's correct to include JavaScript because React.js is a JavaScript library, and JavaScript is the primary language used for writing React components. </p>
+                            <div className="reacts">
+                                <img src={assets.thumbsUp} alt="like" />
+                                <span>123</span>
+                                <img src={assets.thumbsDown} alt="dislike" />
+                                <button>Reply</button>
+                            </div>
+                        </div>
+                        <div className="bottomDots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>  
+                    <div className="postCommenters">
+                        <img src={assets.img5} alt="commenter" />
+                        <div className="bottomreacts">
+                            <h5>@chidiw4343 <span>7 hours ago</span> </h5> 
+                            <p>Regarding your question about listing JavaScript as a language for the frontend: it's correct to include JavaScript because React.js is a JavaScript library, and JavaScript is the primary language used for writing React components. </p>
+                            <div className="reacts">
+                                <img src={assets.thumbsUp} alt="like" />
+                                <span>123</span>
+                                <img src={assets.thumbsDown} alt="dislike" />
+                                <button>Reply</button>
+                            </div>
+                        </div>
+                        <div className="bottomDots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>  
+                    <div className="postCommenters">
+                        <img src={assets.img5} alt="commenter" />
+                        <div className="bottomreacts">
+                            <h5>@chidiw4343 <span>7 hours ago</span> </h5> 
+                            <p>Regarding your question about listing JavaScript as a language for the frontend: it's correct to include JavaScript because React.js is a JavaScript library, and JavaScript is the primary language used for writing React components. </p>
+                            <div className="reacts">
+                                <img src={assets.thumbsUp} alt="like" />
+                                <span>123</span>
+                                <img src={assets.thumbsDown} alt="dislike" />
+                                <button>Reply</button>
+                            </div>
+                        </div>
+                        <div className="bottomDots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>  
+                    <div className="postCommenters">
+                        <img src={assets.img5} alt="commenter" />
+                        <div className="bottomreacts">
+                            <h5>@chidiw4343 <span>7 hours ago</span> </h5> 
+                            <p>Regarding your question about listing JavaScript as a language for the frontend: it's correct to include JavaScript because React.js is a JavaScript library, and JavaScript is the primary language used for writing React components. </p>
+                            <div className="reacts">
+                                <img src={assets.thumbsUp} alt="like" />
+                                <span>123</span>
+                                <img src={assets.thumbsDown} alt="dislike" />
+                                <button>Reply</button>
+                            </div>
+                        </div>
+                        <div className="bottomDots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>  
+                    <div className="postCommenters">
+                        <img src={assets.img5} alt="commenter" />
+                        <div className="bottomreacts">
+                            <h5>@chidiw4343 <span>7 hours ago</span> </h5> 
+                            <p>Regarding your question about listing JavaScript as a language for the frontend: it's correct to include JavaScript because React.js is a JavaScript library, and JavaScript is the primary language used for writing React components. </p>
+                            <div className="reacts">
+                                <img src={assets.thumbsUp} alt="like" />
+                                <span>123</span>
+                                <img src={assets.thumbsDown} alt="dislike" />
+                                <button>Reply</button>
+                            </div>
+                        </div>
+                        <div className="bottomDots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>  
+                    <div className="postCommenters">
+                        <img src={assets.img5} alt="commenter" />
+                        <div className="bottomreacts">
+                            <h5>@chidiw4343 <span>7 hours ago</span> </h5> 
+                            <p>Regarding your question about listing JavaScript as a language for the frontend: it's correct to include JavaScript because React.js is a JavaScript library, and JavaScript is the primary language used for writing React components. </p>
+                            <div className="reacts">
+                                <img src={assets.thumbsUp} alt="like" />
+                                <span>123</span>
+                                <img src={assets.thumbsDown} alt="dislike" />
+                                <button>Reply</button>
+                            </div>
+                        </div>
+                        <div className="bottomDots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>  
+                    <div className="postCommenters">
+                        <img src={assets.img5} alt="commenter" />
+                        <div className="bottomreacts">
+                            <h5>@chidiw4343 <span>7 hours ago</span> </h5> 
+                            <p>Regarding your question about listing JavaScript as a language for the frontend: it's correct to include JavaScript because React.js is a JavaScript library, and JavaScript is the primary language used for writing React components. </p>
+                            <div className="reacts">
+                                <img src={assets.thumbsUp} alt="like" />
+                                <span>123</span>
+                                <img src={assets.thumbsDown} alt="dislike" />
+                                <button>Reply</button>
+                            </div>
+                        </div>
+                        <div className="bottomDots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>  
+                    <div className="postCommenters">
+                        <img src={assets.img5} alt="commenter" />
+                        <div className="bottomreacts">
+                            <h5>@chidiw4343 <span>7 hours ago</span> </h5> 
+                            <p>Regarding your question about listing JavaScript as a language for the frontend: it's correct to include JavaScript because React.js is a JavaScript library, and JavaScript is the primary language used for writing React components. </p>
+                            <div className="reacts">
+                                <img src={assets.thumbsUp} alt="like" />
+                                <span>123</span>
+                                <img src={assets.thumbsDown} alt="dislike" />
+                                <button>Reply</button>
+                            </div>
+                        </div>
+                        <div className="bottomDots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>

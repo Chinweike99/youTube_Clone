@@ -176,3 +176,59 @@
 .commentHeading h3{
     font-weight: 900;
 }
+
+/* ADD COMMENT */
+.addComment{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 40px auto;
+}
+.addComment img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.addComment .comment1{
+    width: 100%;
+}
+
+/* POST COMMENTERS */
+.postCommenters{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+.postCommenters img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.postCommenters .bottomreacts .reacts{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.postCommenters .bottomreacts .reacts img{
+    width: 17px;
+}
+.reacts button{
+    margin-left: 20px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    font-weight: 700;
+}
+.postCommenters .bottomDots{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 2px;
+}
+.postCommenters .bottomDots div{
+    width: 3px;
+    height: 3px;
+    background: #333;
+    border-radius: 50%;
+}

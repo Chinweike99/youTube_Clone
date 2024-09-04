@@ -2,19 +2,19 @@ import React from "react";
 import './SideBar.css'
 import assets from "../../assets/assets";
 
-const SideBar = ({showName}) => {
+const SideBar = ({showName, category, setCategory}) => {
     return(
         <div className={showName ? "sideBar" : "hideBar"}>
             <div className="mainBar">
-                <div className="sideBarRoute">
+                <div className={`sideBarRoute ${category===0? "active": ""}`} onClick={()=>setCategory(0)}>
                     <img src={assets.houseSolid} alt="" />
                     {showName && <span>Home</span>}
                 </div>
-                <div className="sideBarRoute">
+                <div className={`sideBarRoute ${category===18? "active": ""}`} onClick={()=>setCategory(18)}>
                     <img src={assets.playstationSolid} alt="" />
                     {showName && <span>Shorts</span>}
                 </div>
-                <div className="sideBarRoute">
+                <div className="sideBarRoute" onClick={()=>setCategory(0)}>
                     <img src={assets.hackerrankSolid} alt="" />
                     {showName && <span>Subscriptions</span>}
                 </div>

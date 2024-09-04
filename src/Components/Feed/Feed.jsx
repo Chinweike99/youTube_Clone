@@ -3,16 +3,16 @@ import './Feed.css'
 import assets from "../../assets/assets";
 import { Link } from "react-router-dom";
 
-const Feed = ({showName}) => {
+const Feed = ({showName, category}) => {
     return (
         <div className={!showName ? "mainFeed" : null}>
             <div className="feeds">
                 <div className="feedBox">
-                    <Link to={`video/20/4512`}>
+                    <Link to={`video/20/4512`} style={{textDecoration: "none", color: "black"}}>
                         <img className="feedBoxImg" src={assets.image2} alt="" />
                         <div className="feedImg">
                             <img src={assets.amandla} alt="" />
-                            <div>
+                            <div >
                             <h3>Find Love with us, on our game</h3>
                             <h4>Weike</h4>
                             <p>20k views &bull; 2 days ago</p>

@@ -36,8 +36,13 @@
     hr{
         margin-bottom: 30px;
     }
-
 }
+
+.sideBarRoute.active img{
+    padding-bottom: 2px;
+    border-bottom: 3px solid rgb(128, 174, 149);
+}
+
 
 .hideBar{
     width: 30px;

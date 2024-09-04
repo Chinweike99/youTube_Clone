@@ -10,7 +10,7 @@ const SideBar = ({showName, category, setCategory}) => {
                     <img src={assets.houseSolid} alt="" />
                     {showName && <span>Home</span>}
                 </div>
-                <div className={`sideBarRoute ${category===18? "active": ""}`} onClick={()=>setCategory(18)}>
+                <div className={`sideBarRoute ${category===17? "active": ""}`} onClick={()=>setCategory(17)}>
                     <img src={assets.playstationSolid} alt="" />
                     {showName && <span>Shorts</span>}
                 </div>

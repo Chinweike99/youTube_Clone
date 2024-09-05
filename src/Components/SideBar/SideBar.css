@@ -1,5 +1,5 @@
 .sideBar{
-    width: 14%;
+    width: 13%;
     height: 100vh; 
     overflow-y: auto; 
     overflow-x: hidden; 
@@ -192,8 +192,11 @@
 .bottomFooter{
     display: flex;
     flex-direction: column;
+    justify-content: left;
     gap: 15px;
+    margin-bottom: 130px;
 }
+
 .bottomFooter .footer1 span{
     margin: 3px;
     font-size: 15px;

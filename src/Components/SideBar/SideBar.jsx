@@ -97,23 +97,23 @@ const SideBar = ({showName, category, setCategory}) => {
             <div>
                 {showName ?<h3 className="you">Explore</h3>:<h3 className="you"></h3> }
                 <div className="mainBar">
-                    <div>
+                    <div onClick={()=>setCategory(26)}>
                         <img src={assets.trends} alt="" />
                         {showName && <span>Trending</span>}
                     </div>
-                    <div>
+                    <div onClick={()=>setCategory(10)}>
                         <img src={assets.musicSolid} alt="" />
                         {showName && <span>Music</span>}
                     </div>
-                    <div>
+                    <div onClick={()=>setCategory(20)}>
                         <img src={assets.gamepadSolid} alt="" />
                         {showName && <span>Gaming</span>}
                     </div>
-                    <div>                       
+                    <div onClick={()=>setCategory(25)}>                       
                         <img src={assets.newsSolid} alt="" />
                         {showName && <span>News</span>}
                     </div>
-                    <div>
+                    <div onClick={()=>setCategory(17)}>
                         <img src={assets.sport1} alt="" />
                         {showName && <span>Sport</span>}
                     </div>

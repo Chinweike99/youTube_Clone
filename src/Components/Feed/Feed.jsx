@@ -29,7 +29,7 @@ const Feed = ({showName, category}) => {
 
     const fetcShorts = async()=>{
 
-        const fetched = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=6&regionCode=DE&videoCategoryId=${category}&key=${API_KEY}`;
+        const fetched = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=7&regionCode=DE&videoCategoryId=${category}&key=${API_KEY}`;
 
         await fetch(fetched).then(res=>res.json()).then(data=>setShorts(data.items))
 

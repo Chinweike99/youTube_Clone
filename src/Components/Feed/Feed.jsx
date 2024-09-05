@@ -10,6 +10,7 @@ const Feed = ({showName, category}) => {
     const API_KEY = import.meta.env.VITE_API_KEY;
     const [info, setInfo] = useState([])
     const [data, setData] = useState([]);
+    const [shorts, setShorts] = useState([]);
 
     const getVideos = async()=>{
 
@@ -26,12 +27,26 @@ const Feed = ({showName, category}) => {
 
     }
 
+    const fetcShorts = async()=>{
+
+        const fetched = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=6&regionCode=DE&videoCategoryId=${category}&key=${API_KEY}`;
+
+        await fetch(fetched).then(res=>res.json()).then(data=>setShorts(data.items))
+
+    }
+
     useEffect(()=>{
         getVideos()
     }, [category])
     useEffect(()=>{
         fetcData();
-    }, [])
+    }, [category])
+
+    useEffect(()=>{
+        fetcShorts();
+    }, []);
+
+
 
     return (
         <div className={!showName ? "mainFeed" : null}>
@@ -44,7 +59,7 @@ const Feed = ({showName, category}) => {
                             <div className="feedImg">
                                 <img src={`${item.snippet.thumbnails.standard.url}`} alt="" />
                                 <div >
-                                <h3>{`${item.snippet.title}`}</h3>
+                                <h3>{`${item.snippet.title}`.slice(0, 30)}</h3>
                                 <h4>{`${item.snippet.channelTitle}`}</h4>
                                 <p>{convertValue(`${item.statistics.viewCount}`)} views &bull; {moment(`${item.snippet.publishedAt}`).fromNow()}</p>
                             </div>
@@ -70,71 +85,24 @@ const Feed = ({showName, category}) => {
                 </div>
             <div className="shorts">
                 <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.image6} alt="" />
-                    <div className="feedImg">
-                        <img src={assets.amandla} alt="" />
-                        <div>
-                        <h3>FInd Love with us, on our game</h3>
-                        <h4>Weike</h4>
-                        <p>20k views &bull; 2 days ago</p>
-                    </div>
-                    </div>
+                    {shorts.map((item, index)=>{
+                        return(
+                            <div>
+                                <img className="feedBoxImg" src={`${item.snippet.thumbnails.standard.url}`} alt="" />
+                                <div className="feedImg">
+                                    <img src={`${item.snippet.thumbnails.standard.url}`} alt="" />
+                                    <div>
+                                        <h3>{`${item.snippet.title}`.slice(0, 20)}</h3>
+                                        <h4>{`${item.snippet.channelTitle}`}</h4>
+                                        <p>{convertValue(`${item.statistics.viewCount}`)} views &bull; {moment(`${item.snippet.publishedAt}`).fromNow()}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })}
+                    
                 </div>
-                <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.img1} alt="" />
-                    <div className="feedImg">
-                        <img src={assets.amandla} alt="" />
-                        <div>
-                        <h3>FInd Love with us, on our game</h3>
-                        <h4>Weike</h4>
-                        <p>20k views &bull; 2 days ago</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.img2} alt="" />
-                    <div className="feedImg">
-                        <img src={assets.amandla} alt="" />
-                        <div>
-                        <h3>FInd Love with us, on our game</h3>
-                        <h4>Weike</h4>
-                        <p>20k views &bull; 2 days ago</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.img3} alt="" />
-                    <div className="feedImg">
-                        <img src={assets.amandla} alt="" />
-                        <div>
-                        <h3>FInd Love with us, on our game</h3>
-                        <h4>Weike</h4>
-                        <p>20k views &bull; 2 days ago</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.images3} alt="" />
-                    <div className="feedImg">
-                        <img src={assets.amandla} alt="" />
-                        <div>
-                        <h3>FInd Love with us, on our game</h3>
-                        <h4>Weike</h4>
-                        <p>20k views &bull; 2 days ago</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="feedBox">
-                    <img className="feedBoxImg" src={assets.Ai2} alt="" />
-                    <div className="feedImg">
-                        <img src={assets.amandla} alt="" />
-                        <div>
-                        <h3>FInd Love with us, on our game</h3>
-                        <h4>Weike</h4>
-                        <p>20k views &bull; 2 days ago</p>
-                    </div>
-                    </div>
-                </div>
+                
             </div>
 
         {/* MIDDLE FEED */}
@@ -147,7 +115,7 @@ const Feed = ({showName, category}) => {
             </div>
 
             {/* BOTTOM FEEDS */}
-            <div className="feeds">
+            <div className="feeds" id="bottomFeed">
 
             <div className="feedBox">
                     {data.map((item, index) =>{
@@ -157,7 +125,7 @@ const Feed = ({showName, category}) => {
                             <div className="feedImg">
                                 <img src={`${item.snippet.thumbnails.standard.url}`} alt="" />
                                 <div >
-                                <h3>{`${item.snippet.title}`}</h3>
+                                <h3>{`${item.snippet.title}`.slice(0, 30)}</h3>
                                 <h4>{`${item.snippet.channelTitle}`}</h4>
                                 <p>{convertValue(`${item.statistics.viewCount}`)} views &bull; {moment(`${item.snippet.publishedAt}`).fromNow()}</p>
                             </div>

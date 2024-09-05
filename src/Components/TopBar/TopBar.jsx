@@ -3,34 +3,45 @@ import assets from '../../assets/assets'; // Adjust the path as needed
 import './TopBar.css'
 import { Link } from 'react-router-dom';
 
-function TopBar() {
+function TopBar({setCategory}) {
   // State to track the current index of the first visible button
   const [startIndex, setStartIndex] = useState(1);
-
+  const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
   // Array of button labels for dynamic rendering
   const buttons = [
-    {label: 'all', path: '/all'},
-    {label: 'JavaScript', path: '/JavaScript'},
-    {label: 'Gaming', path: '/Gaming'},
-    {label: 'Game shows', path: '/Game shows'},
-    {label: 'Databases', path: '/Databases'},
-    {label: 'Software Development', path: '/Software Development'},
-    {label: 'Action thrillers', path: '/Action thrillers'},
-    {label: 'Music', path: '/Music'},
-    {label: 'Algorithms', path: '/Algorithms'},
-    {label: 'Thrillers', path: '/Thrillers'},
-    {label: 'Nollywood', path: '/Nollywood'},
-    {label: 'Server', path: '/Server'},
-    {label: 'E-commerce', path: '/E-commerce'},
-    {label: 'Podcasts', path: '/Podcasts'},
-    {label: 'Editing', path: '/Editing'},
-    {label: 'Live', path: '/Live'},
-    {label: 'News', path: '/News'},
-    {label: 'Sketch comedy', path: '/Sketch comedy'},
-    {label: 'Recently uploaded', path: '/Recently uploaded'},
-    {label: 'Watched', path: '/Watched'},
-    {label: 'New to you', path: '/New to you'},
+    {label: 'all', categoryId: '0'},
+    {label: 'Film & Animations', categoryId: '1'},
+    {label: 'Gaming', categoryId: '20'},
+    {label: 'Autos & vehicles', categoryId: '2'},
+    {label: 'Music', categoryId: '10'},
+    {label: 'Pets & Animals', categoryId: '15'},
+    {label: 'Sports', categoryId: '17'},
+    {label: 'Travels & Events', categoryId: '19'},
+    {label: 'VideoBlogging', categoryId: '21'},
+    {label: 'People & blogs', categoryId: '22'},
+    {label: 'Comedy', categoryId: '23'},
+    {label: 'Entertainment', categoryId: '24'},
+    {label: 'Movies', categoryId: '35'},
+    {label: 'Foreign', categoryId: '38'},
+    {label: 'Thriller', categoryId: '41'},
+    {label: 'News & Politics', categoryId: '25'},
+    {label: 'Life Style', categoryId: '26'},
+    {label: 'Education', categoryId: '27'},
+    {label: 'Science & Education', categoryId: '28'},
+    {label: 'Nonprofits & Activism', categoryId: '29'},
+    {label: 'New to you', categoryId: '25'},
   ];
+
+
+  const fetchVideos = async (categoryId) => {
+    const videoUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&videoCategoryId=${categoryId}&key=${API_KEY}`;
+    
+    const response = await fetch(videoUrl);
+    const data = await response.json();
+    setVideos(data.items); // This updates the video list in the parent component
+  };
+
+
 
   // Handle clicking the "less than" image
   const handleScrollLeft = () => {
@@ -45,6 +56,7 @@ function TopBar() {
       setStartIndex(startIndex + 1);
     }
   };
+
 
   return (
     <div className="topBar">
@@ -64,7 +76,12 @@ function TopBar() {
                   {/* Dynamically render buttons based on the current startIndex */}
                   {buttons.slice(startIndex, startIndex + 15).map((button, index) => (
                     <Link key={index} to={button.path}>
-                        <button >{button.label}</button>
+                        <button
+                          onClick={() => {
+                            setCategory(button.categoryId);
+                            fetchVideos(button.categoryId); 
+                          }}
+                        >{button.label}</button>
                     </Link>
                   
                   ))}

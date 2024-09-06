@@ -13,7 +13,7 @@ const Videos = () => {
         <div className="manVideo">
             <div className="videos">
                 <PlayVideo videoId={videoId} categoryId={categoryId}/>
-                <Recommended categoryId={categoryId} setCategory={setCategory}/>
+                <Recommended categoryId={categoryId} category={category} setCategory={setCategory}/>
             </div>
         </div>
     )

@@ -2,10 +2,10 @@ import React, {useEffect, useState} from "react";
 import './Recommended.css'
 import assets from "../../assets/assets";
 import { Link } from "react-router-dom";
-import { convertValue } from "../value";
+import { convertValue, buttons } from "../value";
 import moment from "moment";
 
-const Recommended = ({categoryId, setCategory}) => {
+const Recommended = ({categoryId, category, setCategory}) => {
 
     const API_KEY = import.meta.env.VITE_API_KEY;
     const [recommended, getRecommened] = useState([]);
@@ -22,31 +22,6 @@ useEffect(() => {
     fetchRecommended();
 }, [])
 
-const buttons = [
-    {label: 'all', categoryId: '0'},
-    {label: 'Film & Animations', categoryId: '1'},
-    {label: 'Gaming', categoryId: '20'},
-    {label: 'Autos & vehicles', categoryId: '2'},
-    {label: 'Music', categoryId: '10'},
-    {label: 'Pets & Animals', categoryId: '15'},
-    {label: 'Sports', categoryId: '17'},
-    {label: 'Travels & Events', categoryId: '19'},
-    {label: 'VideoBlogging', categoryId: '21'},
-    {label: 'People & blogs', categoryId: '22'},
-    {label: 'Comedy', categoryId: '23'},
-    {label: 'Entertainment', categoryId: '24'},
-    {label: 'Movies', categoryId: '35'},
-    {label: 'Foreign', categoryId: '38'},
-    {label: 'Thriller', categoryId: '41'},
-    {label: 'News & Politics', categoryId: '25'},
-    {label: 'Life Style', categoryId: '26'},
-    {label: 'Education', categoryId: '27'},
-    {label: 'Science & Education', categoryId: '28'},
-    {label: 'Nonprofits & Activism', categoryId: '29'},
-    {label: 'New to you', categoryId: '25'},
-  ];
-
-
   const fetchVideos = async (categoryId) => {
     const videoUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&videoCategoryId=${categoryId}&key=${API_KEY}`;
     
@@ -54,8 +29,6 @@ const buttons = [
     const data = await response.json();
     setVideos(data.items); // This updates the video list in the parent component
   };
-
-    // const [startIndex, setVisibleIndex] = useState(0);
 
     const handleScrollLeft = () => {
         if (startIndex > 0) {

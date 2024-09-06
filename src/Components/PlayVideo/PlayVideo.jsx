@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './PlayVideo.css'
 import assets from "../../assets/assets";
+import { convertValue, comaSeparated } from "../value";
 
 const PlayVideo = ({videoId}) => {
-    // const encodedVideoId = encodeURIComponent(videoId);
 
+    const API_KEY = import.meta.env.VITE_API_KEY;
+    const [data, setData] = useState(null);
 
-console.log(videoId);
+    const getVideoData = async () =>{
+        //FECTHING VIDEO DATA
+        const videoData = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${videoId}&key=${API_KEY}`
+
+        await fetch(videoData).then(res=>res.json()).then(data=>setData(data.items[0]))
+
+    }
+
+    useEffect(()=>{
+        getVideoData();
+    }, [])
 
     return(
         <div className="plavVideo">
             <div className="mainDiv">
                 {/* <video src={assets.video1} autoPlay controls muted /> */}
                 <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-                <h2>Learn to ride like a pro, within the shortest posible time !...</h2>
+                <h2>{data?data.snippet.title : "Title"}</h2>
                 <div className="controlDiv">
                     <div className="user">
                         <img src={assets.amandla} alt="" />
@@ -28,7 +38,7 @@ console.log(videoId);
                     <div className="actions">
                         <div className="reactions">
                             <img src={assets.thumbsUp} alt="Like" />
-                            <span>62</span>
+                            <span>{convertValue(data?data.statistics.likeCount: "0")}</span>
                             <div className="verticalLine"></div>
                             <img src={assets.thumbsDown} alt="Dislike" />
                         </div>
@@ -65,7 +75,7 @@ console.log(videoId);
             {/* COMMENTS */}
             <div className="commentsDiv">
                 <div className="commentHeading">
-                    <h1>500 Comments</h1>
+                    <h1>{comaSeparated(data?data.statistics.commentCount: "0")} Comments</h1>
                     <div className="hamburger">
                         <div className="div1"></div>
                         <div className="div2"></div>

@@ -34,7 +34,8 @@
 }
 
 .recommended .maindiv1{
-    display: flex;
+    /* display: flex; */
+    /* flex-direction: column; */
     gap: 10px;
     width: 100%;
     margin-bottom: 10px;
@@ -43,6 +44,9 @@
 .maindiv1 img{
     border-radius: 15px;
     width: 40%;
+}
+.maindiv1 .channelInfo{
+    display: flex;
 }
 .maindiv1 .channelInfo h4, p{
     color: #5a5a5a;

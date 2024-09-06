@@ -1,9 +1,24 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './Recommended.css'
 import assets from "../../assets/assets";
 import { Link } from "react-router-dom";
+import { convertValue } from "../value";
+import moment from "moment";
 
-const Recommended = () => {
+const Recommended = ({categoryId}) => {
+
+    const API_KEY = import.meta.env.VITE_API_KEY;
+    const [recommended, getRecommened] = useState([]);
+
+    const fetchRecommended = async () => {
+        const videoFetched = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=10&regionCode=US&videoCategoryId=${categoryId}&key=${API_KEY}`
+        await fetch(videoFetched).then(res=>res.json()).then(data=>getRecommened(data.items));
+    }
+
+
+useEffect(() => {
+    fetchRecommended();
+}, [])
 
     const buttons = [
         { label: 'all', path: '/all' },
@@ -28,6 +43,7 @@ const Recommended = () => {
 
 
 
+
     return(
         <div className="recommended">
             <div className="nextScroll">
@@ -42,156 +58,34 @@ const Recommended = () => {
             <img src={assets.greater} alt="Scroll Right" onClick={handleScrollRight} />
             </div>
 
+
             <div className="maindiv1">
-                <img src={assets.Ai} alt="" />
-                <div className="channelInfo">
-                    <div className="dotsDiv">
-                        <h3>All About Artificial creativity</h3>
-                        <div className="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                {recommended.map((item, index)=>{
+                    return (
+                        <div className="channelInfo">
+                        <Link key={index}>
+                            <img src={item.snippet.thumbnails.medium.url} alt="" />
+                            <div>
+                                <div className="dotsDiv">
+                                    <h3>{item.snippet.title}</h3>
+                                    <div className="dots">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <h4>{item.channelTitle}</h4>
+                                <p>{convertValue(item.statistics.viewCount)} views &bull; {moment(item.snippet.publishedAt).fromNow()}</p>
+                            </div>
+                           
+                        </Link>
                         </div>
-                    </div>
-                    <h4>Chinwe</h4>
-                    <p>124k views &bull; 1 day ago</p>
-                </div>
+                    )
+
+                })}
+                
             </div>
-            <div className="maindiv1">
-                <img src={assets.Ai} alt="" />
-                <div className="channelInfo">
-                    <div className="dotsDiv">
-                        <h3>All About Artificial Intelligence</h3>
-                        <div className="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <h4>Chinwe</h4>
-                    <p>124k views &bull; 1 day ago</p>
-                </div>
-            </div>
-            <div className="maindiv1">
-                <img src={assets.Ai} alt="" />
-                <div className="channelInfo">
-                    <div className="dotsDiv">
-                        <h3>All About Artificial Intelligence</h3>
-                        <div className="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <h4>Chinwe</h4>
-                    <p>124k views &bull; 1 day ago</p>
-                </div>
-            </div>
-            <div className="maindiv1">
-                <img src={assets.Ai} alt="" />
-                <div className="channelInfo">
-                    <div className="dotsDiv">
-                        <h3>All About Artificial Intelligence</h3>
-                        <div className="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <h4>Chinwe</h4>
-                    <p>124k views &bull; 1 day ago</p>
-                </div>
-            </div>
-            <div className="maindiv1">
-                <img src={assets.Ai} alt="" />
-                <div className="channelInfo">
-                    <div className="dotsDiv">
-                        <h3>All About Artificial Intelligence</h3>
-                        <div className="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <h4>Chinwe</h4>
-                    <p>124k views &bull; 1 day ago</p>
-                </div>
-            </div>
-            <div className="maindiv1">
-                <img src={assets.Ai} alt="" />
-                <div className="channelInfo">
-                    <div className="dotsDiv">
-                        <h3>All About Artificial Intelligence</h3>
-                        <div className="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <h4>Chinwe</h4>
-                    <p>124k views &bull; 1 day ago</p>
-                </div>
-            </div>
-            <div className="maindiv1">
-                <img src={assets.Ai} alt="" />
-                <div className="channelInfo">
-                    <div className="dotsDiv">
-                        <h3>All About Artificial Intelligence</h3>
-                        <div className="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <h4>Chinwe</h4>
-                    <p>124k views &bull; 1 day ago</p>
-                </div>
-            </div>
-            <div className="maindiv1">
-                <img src={assets.Ai} alt="" />
-                <div className="channelInfo">
-                    <div className="dotsDiv">
-                        <h3>All About Artificial Intelligence</h3>
-                        <div className="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <h4>Chinwe</h4>
-                    <p>124k views &bull; 1 day ago</p>
-                </div>
-            </div>
-            <div className="maindiv1">
-                <img src={assets.Ai} alt="" />
-                <div className="channelInfo">
-                    <div className="dotsDiv">
-                        <h3>All About Artificial Intelligence</h3>
-                        <div className="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <h4>Chinwe</h4>
-                    <p>124k views &bull; 1 day ago</p>
-                </div>
-            </div>
-            <div className="maindiv1">
-                <img src={assets.Ai} alt="" />
-                <div className="channelInfo">
-                    <div className="dotsDiv">
-                        <h3>All About Artificial Intelligence</h3>
-                        <div className="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <h4>Chinwe</h4>
-                    <p>124k views &bull; 1 day ago</p>
-                </div>
-            </div>
+
         </div>
     )
 }

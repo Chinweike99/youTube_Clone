@@ -118,7 +118,7 @@ const PlayVideo = ({videoId}) => {
                 <div >
                 {commentDatas.map((info, index) => {
                     return (
-                     <div className="postCommenters">
+                     <div className="postCommenters" key={index}>
                         <img src={info.snippet.topLevelComment.snippet.authorProfileImageUrl} alt="commenter" />
                         <div className="bottomreacts">
                             <h5>{info.snippet.topLevelComment.snippet.authorDisplayName} <span>{moment(info.snippet.topLevelComment.snippet.publishedAt).fromNow()}</span> </h5> 

@@ -4,8 +4,8 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin-top: 35px;
     margin-bottom: 20px;
-
 }
+
 #bottomFeed{
     margin-top: -25px;
 }
@@ -15,7 +15,7 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
     /* margin-bottom: 50px; */
 }
 .feedBox .feedBoxImg{
@@ -125,9 +125,6 @@
 }
 
 @media (max-width: 900px){
-    .mainFeed{
-        margin-left: 60px;
-    }
     .bottomFeed .imgBtn{
         display: flex;
         gap: 12px;
@@ -135,5 +132,8 @@
         margin: auto 37%;
         padding: 4px 20px;
         border-radius: 25px;
+    }
+    .mainFeed{
+        margin: 0 5px;
     }
 }

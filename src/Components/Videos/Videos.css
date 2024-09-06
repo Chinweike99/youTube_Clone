@@ -14,3 +14,9 @@
     justify-content: center;
     gap: 20px;
 }
+@media (max-width: 1200px){
+    .videos{
+        display: flex;
+        flex-direction: column;
+    }
+}

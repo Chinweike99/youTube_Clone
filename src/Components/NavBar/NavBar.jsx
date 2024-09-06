@@ -13,7 +13,7 @@ const NavBar = ({showName, setShowName}) => {
         <div className="mainNavBar">
             <div className="leftNav">
                 <img onClick={handleTogle} src={assets.menuBar} alt="" />
-                <Link to={"/home"}>
+                <Link to={"/"}>
                     <div className="playIcon">
                         <img src={assets.playSolid} alt="" />
                     </div>

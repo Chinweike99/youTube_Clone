@@ -37,14 +37,17 @@ const Feed = ({showName, category}) => {
 
     useEffect(()=>{
         getVideos()
-    }, [category])
-    useEffect(()=>{
         fetcData();
+        fetcShorts();
     }, [category])
 
-    useEffect(()=>{
-        fetcShorts();
-    }, []);
+    // useEffect(()=>{
+    //     fetcData();
+    // }, [category])
+
+    // useEffect(()=>{
+    //     fetcShorts();
+    // }, []);
 
 
 

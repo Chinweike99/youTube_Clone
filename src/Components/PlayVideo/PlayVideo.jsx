@@ -2,11 +2,18 @@ import React from "react";
 import './PlayVideo.css'
 import assets from "../../assets/assets";
 
-const PlayVideo = () => {
+const PlayVideo = ({videoId}) => {
+
+
+
     return(
         <div className="plavVideo">
             <div className="mainDiv">
-                <video src={assets.video1} autoPlay controls muted />
+                {/* <video src={assets.video1} autoPlay controls muted /> */}
+                <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+                {/* <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+            
+
                 <h2>Learn to ride like a pro, within the shortest posible time !...</h2>
                 <div className="controlDiv">
                     <div className="user">

@@ -197,6 +197,18 @@
 .addComment .comment1{
     width: 100%;
 }
+.comment1 input{
+    background: transparent;
+    padding: 4px 0;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+.comment1 input::placeholder{
+    color: black;
+}
 
 /* POST COMMENTERS */
 .postCommenters{

@@ -46,8 +46,16 @@
     width: 40%;
     /* height: 11vw; */
 }
-.maindiv1 .channelInfo{
-    display: flex;
+
+@media (max-width: 1200px){
+    .channelInfo .link{
+        display: hidden;
+    }
+    .maindiv1 img{
+        width: 30%;
+        /* height: 11vw; */
+    }
+    
 }
 .maindiv1 .channelInfo h4, p{
     color: #5a5a5a;

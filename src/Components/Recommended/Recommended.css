@@ -44,12 +44,25 @@
 .maindiv1 img{
     border-radius: 15px;
     width: 40%;
+    /* height: 11vw; */
 }
 .maindiv1 .channelInfo{
     display: flex;
 }
 .maindiv1 .channelInfo h4, p{
     color: #5a5a5a;
+}
+
+.maindiv1 .channelInfo .link{
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.maindiv1 .channelInfo img{
+    margin-bottom: 10px;
 }
 
 .channelInfo .dotsDiv{

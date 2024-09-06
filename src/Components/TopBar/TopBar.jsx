@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { buttons } from '../value';
 
 
-function TopBar({setCategory}) {
+function TopBar({setCategory, showName}) {
   // State to track the current index of the first visible button
   const [startIndex, setStartIndex] = useState(1);
   const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
@@ -37,7 +37,7 @@ function TopBar({setCategory}) {
 
 
   return (
-    <div className="topBar">
+    <div className="topBar" >
         <div className="mainBar">
           {/* "less than" image to scroll left */}
           <div className='imgDiv'>

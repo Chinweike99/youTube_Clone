@@ -12,7 +12,7 @@ const Home = ({showName}) => {
         <div className="home">
             <SideBar showName={showName} category={category} setCategory={setCategory}/>
             <div id="middleHome" className={showName? "middleBar" : "null"}>
-                <TopBar category={category} setCategory={setCategory}/>
+                <TopBar showName={showName} category={category} setCategory={setCategory}/>
                 <Feed showName={showName} category={category} />
             </div>
         </div>

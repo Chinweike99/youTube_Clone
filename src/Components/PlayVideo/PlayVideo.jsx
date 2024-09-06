@@ -52,7 +52,7 @@ const PlayVideo = ({videoId}) => {
                 <h2>{data?data.snippet.title : "Title"}</h2>
                 <div className="controlDiv">
                     <div className="user">
-                        <img src={channelData?channelData.snippet.thumbnails.medium.url: null} alt="" />
+                        <img src={channelData?channelData.snippet.thumbnails.default.url: null} alt="" />
                         <div>
                             <h3>{data?data.snippet.channelTitle:"Channel Title"}</h3>
                             <span>{convertValue(channelData?channelData.statistics.subscriberCount : "No subscriber")} Subscribers</span>

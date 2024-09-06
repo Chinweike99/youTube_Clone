@@ -3,10 +3,11 @@
     /* justify-content: space-between;
     align-items: center; */
     margin-top: 85px;
+    background: #e0e1e1;
     /* gap: 10px; */
 }
 .middleBar{
-    margin-left: 14%;
+    margin-left: 13%;
 }
 #middleHome{
     width: 100%;

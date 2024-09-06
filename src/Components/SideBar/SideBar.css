@@ -3,7 +3,7 @@
     height: 100vh; 
     overflow-y: auto; 
     overflow-x: hidden; 
-    background-color: #f4f4f4; 
+    background-color: #e0e1e1; 
     padding: 20px; 
     z-index: 1;
     position: fixed;
@@ -13,7 +13,7 @@
     .hideBar{
         display: block;
         position: fixed;
-        top:85px;
+        top:145px;
         z-index: 1;
     }
     .sideBarRoute span{
@@ -21,7 +21,8 @@
     }
     .sideBar{
         overflow-y: hidden; 
-        overflow-x: hidden; 
+        overflow-x: hidden;
+        /* top: 90px; */
     }
     .mainBar div span{
         display: none;

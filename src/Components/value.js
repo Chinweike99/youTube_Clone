@@ -29,6 +29,7 @@ export const buttons = [
     {label: 'Animals', categoryId: '15'},
     {label: 'Sports', categoryId: '17'},
     {label: 'Events', categoryId: '19'},
+    {label: 'All', categoryId: '0'},
     {label: 'VideoBlogging', categoryId: '21'},
     {label: 'People', categoryId: '22'},
     {label: 'Comedy', categoryId: '23'},

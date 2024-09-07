@@ -14,16 +14,11 @@
 @media(max-width:900px){
     .hideBar{
         display: none;
-        position: fixed;
-        top:145px;
-        z-index: 1;
     }
     .sideBarRoute span{
         display: hidden;
     }
     .sideBar{
-        /* overflow-y: hidden; 
-        overflow-x: hidden; */
         display: none;
     }
     .mainBar div span{
